@@ -40,3 +40,14 @@ notebook/pc:
 */
 
 /* tvoje styly sem */
+
+.recept-nazev,
+.recept-kategorie {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.recept-komentare {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
