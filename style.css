@@ -43,11 +43,151 @@ notebook/pc:
 
 .recept-nazev,
 .recept-kategorie {
-    font-family: 'Raleway', sans-serif;
     color: white;
+    font-weight: 800;
 }
 
 .recept-komentare {
-    font-family: 'Source Sans Pro', sans-serif;
     color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+img {
+    border: 1px solid white;
+}
+
+.doporucujeme {
+    display: flex;
+}
+¨
+.recept1,
+.recept2,
+.recept3,
+.recept4,
+.recept5 {
+    display: flex;
+    position: relative;
+}
+
+.recept-kategorie {
+    position: absolute;
+    top: 1rem;
+    left: 0rem;
+    /*padding-top: 1rem;
+    padding-left: 1rem;*/
+}
+
+.recept-nazev {
+    position: absolute;
+    bottom: 1rem;
+    text-align: left;
+    /*padding-left: 1rem;
+    padding-bottom: 1rem;*/
+}
+
+.recept-komentare {
+    position: absolute;
+    text-align: right;
+    top: 1rem;
+    right: 1rem;
+    /*padding-top: 1rem;
+    padding-right: 1rem;*/
+}
+
+/*Break point pro mobil*/
+@media screen and (max-width: 600px) {
+    .recept1 .recept-nazev {
+        font-size: 1.75em;
+    }
+    .recept2 .recept-nazev {
+        font-size: 1.2rem;
+    }
+    .recept3 .recept-nazev {
+        font-size: 1.2rem;
+    }
+    .recept4 .recept-nazev {
+        font-size: 1.2rem;
+    }
+    .recept5 .recept-nazev {
+        font-size: 1.2rem;
+    }
+    .recept-kategorie {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    .recept-komentare {
+        padding-right: 0.5rem;
+        padding-top:0.5rem;
+    }
+    .recept-nazev {
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .doporucujeme {
+        flex-direction: column;
+    }
+}
+
+
+/*Break point pro tablet*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .recept1 .recept-nazev {
+        font-size: 2rem;
+    }
+    .recept2 .recept-nazev {
+        font-size: 1.5rem;
+    }
+    .recept3 .recept-nazev {
+        font-size: 1.5rem;
+    }
+    .recept4 .recept-nazev {
+        font-size: 1.5rem;
+    }
+    .recept5 .recept-nazev {
+        font-size: 1.5rem;
+    }
+    .recept-kategorie {
+        padding-left: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .recept-komentare {
+        padding-right: 1.25rem;
+        padding-top:1.25rem;
+    }
+    .recept-nazev {
+        padding-left: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+}
+
+/*Break point pro desktop*/
+@media screen and (min-width: 901px) {
+    .recept1 .recept-nazev {
+        font-size: 3rem;
+    }
+    .recept2 .recept-nazev {
+        font-size: 1.75rem;
+    }
+    .recept3 .recept-nazev {
+        font-size: 1.75rem;
+    }
+    .recept4 .recept-nazev {
+        font-size: 1.75rem;
+    }
+    .recept5 .recept-nazev {
+        font-size: 1.75rem;
+    }
+    .recept-kategorie {
+        padding-left: 1.25rem;
+        padding-top: 1.25rem;
+    }
+    .recept-komentare {
+        padding-right: 1.25rem;
+        padding-top:1.25rem;
+    }
+    .recept-nazev {
+        padding-left: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
 }
