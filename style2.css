@@ -1,0 +1,166 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+
+/* -------------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.paticka {
+    text-align: center;
+    font-size: 14px;
+    color: silver;
+}
+
+.paticka a {
+    color: silver;
+}
+
+/* -------------------------------------------------- */
+
+/*
+pouzivame mobile first pristup
+tj. vychozi styly mimo media query jsou pro nejmensi mobilni zarizeni (telefony)
+s pribyvajici sirkou pridavame media query pro...
+tablety:
+@media (min-width: 480px) {
+}
+notebook/pc:
+@media (min-width: 860px) {
+}
+*/
+
+/* tvoje styly sem */
+
+/* Kódováno na/po konzultaci s Tomem, kde úkol ukazoval live*/
+
+body {
+    font-family: 'Source Sans Pro', sand-serif;
+}
+
+.recept-nazev {
+    font-size: 1.2rem;
+}
+
+.recept-meta {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.recept {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: red;
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+    min-height: 90px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hlavni {
+    min-height: 200px;
+}
+
+.hlavni {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/burger.jpg);
+}
+
+.recept2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/sushi.jpg);
+}
+
+.recept3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/rajcata.jpg);
+}
+
+.recept4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/kure.jpg);
+}
+
+.recept5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/grilovani.jpg);
+}
+
+@media screen and (min-width: 600px) {
+
+    .doporucujeme {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hlavni {
+        width: 100%;
+    }
+
+    .sloupec {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border-right: 1px solid white;
+    }
+
+    .sloupec:last-child {
+        border: none;
+    }
+
+    .hlavni {
+        min-height: 250px;
+    }
+
+    .recept2,
+    .recept3,
+    .recept4,
+    .recept5 {
+        min-height: 150px;
+    }
+
+    .recept-nazev {
+        font-size: 2rem;
+    }
+    
+    .recept-meta {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+
+    .hlavni,
+    .sloupec {
+        flex-basis: calc(100%/3);
+    }
+
+    .hlavni {
+        min-height: 400px;
+    }
+
+    .recept2,
+    .recept3,
+    .recept4,
+    .recept5 {
+        min-height: 200px;
+    }
+
+    .recept-nazev {
+        font-size: 3rem;
+    }
+    
+    .recept-meta {
+        font-size: 1.75rem;
+    }
+
+}
